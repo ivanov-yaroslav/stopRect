@@ -223,6 +223,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+min-width: 230px;
 }
 
 .button_green {
