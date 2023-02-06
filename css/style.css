@@ -71,6 +71,80 @@ h6 {
   font-size: inherit;
 }
 
+.form__item {
+    position: relative;
+}
+
+
+.pass-message {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    border-radius: 7px;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    transform: translate(0, 8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+}
+
+.pass-message.show-message {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.pass-message :not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.pass-message div {
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pass-message h3 {
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    content: "✖";
+}
+
+.form__error {
+    padding-top: 10px;
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 146.5%;
+    padding-left: 5px;
+}
+
+.input._form-error {
+    border-color: red;
+}
+
 body {
   background-color: #fff;
 }
