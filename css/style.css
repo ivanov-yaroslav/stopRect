@@ -1959,7 +1959,7 @@ textarea.input {
 
 .moving-block::before {
     content: '';
-    background: url('img/timer/1.svg') 0 / 100% no-repeat;
+    background: url('../img/timer/1.svg') 0 / 100% no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -2000,7 +2000,7 @@ textarea.input {
 
 .reserve-block::before {
     content: '';
-    background: url('img/timer/2.svg') 0 / 92% no-repeat;
+    background: url('../img/timer/2.svg') 0 / 92% no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
